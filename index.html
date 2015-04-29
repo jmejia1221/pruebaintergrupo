@@ -4,15 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Agenda de usuarios</title>
 
-	<!-- 
-		Styles CSS
-	 -->
+	<!-- Styles CSS -->
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,200' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
 	<header class="header">
+		<span class="header__title--line line--top"></span>
 		<h1 class="header__title">Agenda de usuarios</h1>
+		<span class="header__title--line line--bottom"></span>
 		<nav class="navegation">
 			<ul>
 				<li class="navegation__items btn">
@@ -30,30 +33,39 @@
 
 	<main class="agenda">
 		<header class="header-agenda">
-			
+			<div class="header-agenda__persona">
+				<h2 data-name="men" class="contact__title">Hombres</h2>
+			</div>
+			<div class="header-agenda__persona">
+				<h2 data-name="women" class="contact__title">Mujeres</h2>
+			</div>
 		</header>
-		<div class="contact">
-			<section class="contact">
+		<div id="template--contact" class="contact">
+			<section class="contact__info">
 				<ul>
 					<li>
 						<img data-image="men" class="contact__image" src="" alt="">
-						<h3 data-name="men" class="contact__title"></h3>
-						<p data-email="men" class="contact__info"></p>
-						<p data-direction="men" class="contact__info"></p>
+						<h3 data-name="men" class="contact__title">Hombres</h3>
+						<p data-email="men" class="contact__info">Lorem</p>
+						<p data-direction="men" class="contact__info">Lorem</p>
 					</li>
 				</ul>
 			</section>
-			<section class="contact">
+			<section class="contact__info">
 				<ul>
 					<li>
-						<img data-image="eomen" class="contact__image" src="" alt="">
-						<h3 data-name="women" class="contact__title"></h3>
-						<p data-email="women" class="contact__info"></p>
-						<p data-direction="women" class="contact__info"></p>
+						<img data-image="women" class="contact__image" src="" alt="">
+						<h3 data-name="women" class="contact__title">Mujeres</h3>
+						<p data-email="women" class="contact__info">Lorem</p>
+						<p data-direction="women" class="contact__info">Lorem</p>
 					</li>
 				</ul>
 			</section>
 		</div>
 	</main>
+	
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/contacto.js"></script>
+
 </body>
 </html>
